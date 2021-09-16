@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {MovieContainer, MovieBg, VideoBg, MovieBtnWrapper, ArrowRight, ArrowForward, MovieContent, MovieH3, MovieP, MoveH1} from './MovieSection'
 import Video from '../../Videos/video4.mp4'
-import {Button} from "style-components";
+import {Button} from "../ButtonElements";
 
 const MovieSection = () => {
     const [hover, setHover] = useState(false);
@@ -24,7 +24,7 @@ const MovieSection = () => {
                   для космических путешествий человека и найти планету с подходящими для человечества условиями.
               </MovieP>
               <MovieBtnWrapper>
-                  <Button to='trailer' onMouseEnter = {onHover} onMouseLeave = {onHover}>Посмотреть трейлер {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
+                  <Button to='trailer' onMouseEnter = {onHover} onMouseLeave = {onHover} primary='true' >Посмотреть трейлер {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
               </MovieBtnWrapper>
           </MovieContent>
       </MovieContainer>

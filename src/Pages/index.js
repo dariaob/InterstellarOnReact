@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Sidebar from "../Components/Sidebar";
 import Navbar from "../Components/Navbar";
 import MovieSection from "../Components/MovieSection";
+import InfoSection from "../Components/InfoSection";
+import {homeObjOne} from "../Components/InfoSection/Data";
 
 
 export const Home = () => {
@@ -15,7 +17,8 @@ export const Home = () => {
         <>
             <Sidebar isOpen = {isOpen} toggle = {toggle}/>
             <Navbar toggle={toggle}/>
-            <MovieSection/>
+            <MovieSection />
+            <InfoSection {...homeObjOne} />
         </>
     )
 }
