@@ -34,13 +34,13 @@ export const InfoRow = styled.div`
 
 export const Comlumn1 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 0 30px;
   grid-area: col1;
 `
 
 export const Comlumn2 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 0 10px;
   grid-area: col2;
 `
 
@@ -90,7 +90,7 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-  width: 80%;
+  width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
   

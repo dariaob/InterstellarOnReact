@@ -13,7 +13,7 @@ import {
     TopLine
 } from "./InfoElements";
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt  }) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2  }) => {
     return(
         <>
             <InfoContainer lighBg = {lightBg} id={id}>
@@ -25,7 +25,17 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <BtnWrap>
-                                    <Button to='home'>{buttonLabel}</Button>
+                                    <Button to='home'
+                                    smooth = {true}
+                                    duration={500}
+                                    spy={true}
+                                    exat='true'
+                                    offset={-80}
+                                    primary={primary ? 1 : 0}
+                                    dark={dark ? 1 : 0}
+                                    dark2={dark2 ? 1 : 0}
+
+                                    >{buttonLabel}</Button>
                                 </BtnWrap>
                             </TextWrapper>
                         </Comlumn1>
